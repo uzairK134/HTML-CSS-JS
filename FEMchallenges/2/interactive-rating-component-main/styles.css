@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(216, 12%, 8%);
+}
+
+
+
+.page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1{
+    background-color:hsl(213, 19%, 18%);
+    width: 375px;
+    height: 425px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+    /* display: none; */
+
+}
+
+.star{
+    background-color:hsl(213, 19%, 18%);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.stardiv{
+    background-color:hsl(212, 15%, 25%);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    float: left;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.stardiv img{
+    background-color: transparent;
+    height: 16px;
+    width: 16px;
+    
+    
+}
+
+.question{
+    background-color:hsl(213, 19%, 18%);
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+}
+
+.textdiv{
+    background-color:hsl(213, 19%, 18%);
+    margin-left: 40px;
+}
+
+.textdiv p{
+    background-color:hsl(213, 19%, 18%);
+    color: white;
+    text-align: center;
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.comment{
+    background-color:hsl(213, 19%, 18%);
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+}
+
+.commentdiv{
+    background-color:hsl(213, 19%, 18%);
+    
+}
+
+.commentdiv p{
+    line-height: 1.5;
+    background-color:hsl(213, 19%, 18%);
+    color:hsl(217, 12%, 63%);
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    
+}
+
+.rating{
+    background-color:hsl(213, 19%, 18%);
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    
+    
+}
+
+.ratediv{
+    background-color:hsl(213, 19%, 18%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color:hsl(213, 19%, 18%);
+    
+
+    
+}
+
+.ratediv button{
+    
+    border: none;
+    background-color:hsl(212, 15%, 25%);
+    color:hsl(217, 12%, 63%);
+    height: 80%;
+    width: 75%;
+    border-radius: 200px;
+
+}
+
+.submit{
+    background-color:hsl(213, 19%, 18%);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.submitdiv{
+    background-color:hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.submitdiv button{
+    width: 85%;
+    background-color: hsl(25, 97%, 53%);
+    height: 40%;
+    border-radius: 40px;
+    color: rgba(245, 245, 245, 0.9);
+    font-weight: 700;
+    font-family: 'Overpass';
+    font-size: 14PX;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.ratediv button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.45);
+    color: white;
+    font-weight: 700;
+}
+
+.ratediv button:active{
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-weight: 700;
+}
+
+
+.submitdiv button:hover{
+    cursor: pointer;
+}
+
+.submitdiv button:active{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+
+
+
+
+
+.container2{
+    background-color:hsl(213, 19%, 18%);
+    width: 375px;
+    height: 425px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 2fr;
+    display: none;
+
+}
+
+.illustration{
+    background-color:hsl(213, 19%, 18%);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.illdiv{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.illdiv img{
+    background-color: transparent;
+    
+}
+
+.rateselection{
+    background-color:hsl(213, 19%, 18%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rateseldiv{
+    width: 57.5%;
+    height: 55%;
+    background-color:hsl(212, 15%, 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    border-radius: 20px;
+}
+
+.rateseldiv p{
+    font-family: 'Overpass';
+    color:hsl(25, 97%, 53%);
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+.thank{
+    background-color:hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.thankdiv{
+    background-color:hsl(213, 19%, 18%);
+}
+
+.thankdiv p{
+    background-color:hsl(213, 19%, 18%);
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Overpass';
+}
+
+.message{
+    background-color:hsl(213, 19%, 18%);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.messagediv{
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color:hsl(213, 19%, 18%);
+}
+
+.messagediv p {
+    background-color:hsl(213, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    font-family: 'Overpass';
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 15px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+
+#rating{
+    background-color:hsl(212, 15%, 25%);
+    font-family: "Overpass";
+    font-style: normal;
+
+}
+
+
+@media (max-width:375px) {
+    .container1, .container2{
+        width: 325px;
+
+    }
+}
