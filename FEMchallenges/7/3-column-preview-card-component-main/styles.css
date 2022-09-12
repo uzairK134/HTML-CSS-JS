@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700;800&family=Lexend+Deca&display=swap');
+
+*{
+    background-color: hsl(0, 0%, 95%);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img, p ,h1{
+    background-color: transparent;
+    padding: 40px;
+}
+
+.container{
+    height: 500px;
+    width: 900px;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    /* justify-content: space-evenly; */
+}
+
+h1{
+    font-weight: 700px;
+    font-size: 36px;
+    color: hsl(0, 0%, 95%);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: 'Big Shoulders Display';
+    letter-spacing: 1.25px;
+}
+
+p{
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+    font-size: 15px;
+    padding-top: 25px;
+    padding-right: 50px;
+}
+
+.sedans{
+    
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.sedans img, .suvs img, .luxury img{
+    padding: 50px;
+    padding-bottom: 35px;
+}
+
+button{
+    height: 40px;
+    width: 140px;
+    margin: 40px;
+    margin-top: 30px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 80px;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    font-family: 'Lexend Deca';
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width:375px) {
+    .container{
+        flex-wrap: wrap;
+        height: 100%;
+        margin: 20px;
+    }
+
+    p{
+        padding-bottom: 0px;
+    }
+    
+    button{
+        margin-bottom: 45;
+    }
+}
+
+
+
