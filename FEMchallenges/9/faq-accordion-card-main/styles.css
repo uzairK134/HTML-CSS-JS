@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans';
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: white;
+    border-radius: 25px;
+    height: 500px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: -1500% 67.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+}
+
+.answer{
+    display: none;
+    padding-bottom: 15px;
+}
+
+.active .answer{
+    display: block;
+    color:  hsl(240, 6%, 50%);
+    transition: all 0.3s ease-in;
+}
+
+.active .question img{
+    transition: all 0.2s ease-in;
+    transform: rotate(180deg);
+}
+
+.question img{
+    transition: all 0.2s ease-in;
+    transform: rotate(0deg);
+}
+
+.content{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.query{
+    width: 350px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+
+.FAQ{
+    margin-top: -10px;
+    margin-bottom: 5px;
+    color: hsl(238, 29%, 16%);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    margin-right: 400px;
+}
+
+.question h3{
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: 1.4rem 0rem;
+    color: hsla(238, 29%, 16%, 0.85);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.question img{
+    align-self: center;
+}
+
+.image{
+    position: relative;
+}
+
+.imagediv{
+    background: url('images/illustration-woman-online-desktop.svg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% center;
+}
+
+.box{
+    position: absolute;
+    top: 40%;
+    left: -21%;
+}
+
+.question h3:hover{
+    color: hsla(14, 88%, 65%, 0.65);
+}
+
+.active .question h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(238, 29%, 16%);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:375px) {
+
+    .body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .container{
+        width: 335px;
+        grid-template-rows: 2;
+        justify-content: center;
+
+    }
+
+    .image{
+        grid-row: 1;
+
+    }
+
+    .content{
+        grid-row: 2;
+        margin-left: 90px;
+        padding-bottom: 300px;
+        margin-top: 25px;
+
+        
+    }
+
+    .FAQ{
+       align-self: center;
+       margin-left: 400px;
+    }
+
+    .FAQ h1{
+        
+    }
+
+    .question, .answer{
+        /* margin: 0 25px; */
+        /* margin-left: 30px; */
+        width: 240px;
+        margin-left: 20px;
+        
+    }
+
+    .text{
+        /* margin: 0 100px; */
+        margin-left: 300px;
+    }
+
+    .query{
+        width: 290px;
+        margin-right: 100px;
+    }
+    .query img{
+        
+    }
+
+    .query h3, .answer{
+       
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .answer{
+        margin-top: -15px;
+        padding: 0 0;
+    }
+
+}
