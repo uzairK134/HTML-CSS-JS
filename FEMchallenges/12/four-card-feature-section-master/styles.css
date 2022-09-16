@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Poppins'; 
+  background-color: hsl(0, 0%, 98%);
+}
+
+.title{
+    width: 75%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.title h3{
+    color: hsla(234, 12%, 34%,0.9);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.title h1{
+    color: hsl(234, 12%, 34%);
+    font-size: 31px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.description p{
+    font-size: 17px;
+    color: hsl(229, 6%, 66%);
+    padding: 0 30%;
+}
+
+.container{
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+}
+
+
+.left{
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-column: 1;
+
+}
+
+.middle{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-column: 2;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-column: 3;
+}
+
+.card{
+    box-shadow: 0px 15px 20px hsla(198, 78%, 25%, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5%;
+    padding-bottom: 6%;
+    padding-right: 8%;
+}
+
+
+.card h1{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 2%;
+    background-color: transparent;
+}
+
+.card p{
+    color: hsl(229, 6%, 66%);
+    background-color: transparent;
+    font-size: 17px;
+    padding-right: 20%;
+}
+
+.card img{
+    background-color: transparent;
+    float: right;
+    position: relative;
+    /* top: 35%;    */
+}
+
+.teambuilder img, .calculator img{
+    position: relative;
+    top: 25%;
+}
+
+.supervisor img, .karma img{
+    position: relative;
+    top: 20%;
+}
+
+
+.supervisor{
+    background-color: white;
+    height: 45%;
+    width: 100%;
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.teambuilder{
+    background-color: white;
+    height: 45%;
+    width: 100%;
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma{
+    background-color: white;
+    height: 45%;
+    width: 100%;
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator{
+    background-color: white;
+    height: 45%;
+    width: 100%;
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+@media (max-width:375px) {
+
+    body{
+        height: 1200px;
+    }
+
+    .title{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    
+    .title h3{
+        color: hsla(234, 12%, 34%,0.9);
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .title h1{
+        font-size: 24px;
+    }
+
+    .title p{
+        font-size: 15px;
+        padding: 0%;
+        margin: 4% 10%;
+
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        height: 200px;
+        margin-bottom: 7%;
+    }
+
+    .card h1{
+        font-size: 1.1rem;
+    }
+
+    .card p{
+        font-size: 0.7rem;
+    }
+
+    .card img{
+        width: 18%;
+    }
+
+    .supervisor img, .karma img{
+        top: 30%;
+    }
+
+}
