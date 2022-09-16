@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+    font-family: 'Karla';
+}
+
+.container{
+    
+    height: 425px;
+    width: 100%;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 0.45fr 0.55fr;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.top{
+    margin: 5%;
+}
+
+.top h1{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 3%;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.top h4{
+    color: hsl(70, 100%, 39%);
+    margin-bottom: 2%;
+    font-weight: 700;
+}
+
+.top p{
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-right: 15%;
+    
+}
+
+.bottom{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left{
+    height: 100vh;
+    background-color: hsl(179, 62%, 43%);
+    border-right: 1px solid rgba(0, 0, 0, 0.02);
+    padding: 10%;
+}
+
+.left h5{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 6%;
+}
+
+.left .price{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 5%;
+
+} 
+
+.left span{
+    color: hsla(204, 43%, 93%, 0.75);
+    font-size: 15px;
+    padding-left: 3%;
+    font-weight: 300;
+}
+
+.left p{
+    color: hsl(204, 43%, 93%);
+    font-size: 12px;
+    margin-bottom: 10%;
+}
+
+.left button{
+    height: 5%;
+    width: 90%;
+    border: none;
+    border-radius: 4px;
+    background-color: hsl(70, 100%, 39%); 
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+.right{
+    height: 100vh;
+    background-color: hsl(179, 67%, 45%);
+}
+
+.right{
+    padding: 10%;
+}
+
+.right h4{
+    color: white;
+    margin-bottom: 5%;
+}
+
+.right p{
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 300;
+    font-size: 12px;
+    padding-right: 40%;
+    line-height: 1.35;
+}
+
+@media (max-width:375px) {
+    body{
+        width: 85%;
+    }
+
+    .container{
+        height: 66%;
+        border-radius: 5px;
+        grid-template-rows: 0.33fr 0.66fr;
+    }
+    
+    .top{
+        padding: 5%;
+    }
+
+    .top h1{
+        margin-bottom: 8%;
+    }
+
+
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: 50%;
+    }
+
+    .left{
+        padding: 8%;
+        margin: 0;
+        height: 500px;
+    }
+
+    .left h5{
+        font-size: 22px;
+    }
+
+    .left .price{
+        font-size: 30px;
+    }
+
+    .left p{
+        font-size: 16px;
+    }
+
+    .left button{
+        height: 25%;
+        width: 100%;
+        height: 25%;
+        margin-top: 10px;
+    }
+
+    .right{
+        padding: 8%;
+        height: 500px;
+    }
+
+    .right h4{
+        font-size: 18px;
+    }
+
+    .right p{
+        font-size: 16px;
+        padding-right: 30%;
+    }
+
+}
