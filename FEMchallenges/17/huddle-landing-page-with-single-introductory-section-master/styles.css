@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:wght@300;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('/images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.left{
+    grid-column: 1;
+}
+
+.logo{
+    margin-top: 5%;
+}
+
+.image{
+    margin-top: 10%;
+}
+
+.image .pic{
+    width: 100%;
+}
+
+.right{
+    padding: 0 5% 5% 7.5%;
+    
+
+}
+
+.right h1{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding-right: 30%;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.right h3{
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    padding-right: 30%;
+    font-size: 17px;
+    margin-bottom: 5%;
+    line-height: 1.75;
+}
+
+.right button{
+    width: 25%;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    color: hsl(257, 40%, 49%);
+    font-weight: 500;
+}
+
+.right button:hover{
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+}
+
+.fb i, .tw i, .ins i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:3px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    color: white;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+@media (max-width:375px) {
+    main{
+        display: block;
+    }
+
+    .logopic{
+        width: 45%;
+        margin-bottom: 25px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .left{
+        margin-bottom: 50px;
+    }
+
+    .image{
+        width: 85%;
+        margin: 25px auto;
+    }
+
+    .right{
+        padding: 0;
+    }
+
+    .right h1{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+    }
+
+    .right h3{
+        text-align: center;
+    }
+
+    .right h3{
+        margin: 20px 10px 10px 10px;
+        padding: 0;
+        font-size: 17px;
+    }
+
+    .right button{
+        width: 200px;
+        height: 40px;
+        margin: 15px 75px;
+    }
+
+    .socials{
+        right: 9%;
+        bottom: 30%; 
+    }
+
+    .fb i, .tw i, .ins i{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+    }
+
+
+
+}
