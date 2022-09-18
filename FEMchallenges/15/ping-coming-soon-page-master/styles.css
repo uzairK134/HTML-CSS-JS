@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700;800;900&display=swap');
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin';
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .logo{
+    margin: 7.5% auto 5% auto;
+    background-color: transparent;
+}
+
+main h1{
+    font-size: 2.5rem;
+    margin: 0 auto 2% auto;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+h1 span{
+    color: black;
+    text-shadow: 0 0 2px solid black;
+    font-weight: 600;
+}
+
+main h3{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+    margin: 0 auto 4% auto;
+}
+
+form{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    margin-bottom: 7.5%;
+}
+
+form input{
+    height: 45px;
+    width: 400px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    margin: 0 3%;
+    opacity: 0.5;
+    font-size: 0.95rem;
+}
+
+.error{
+    color: rgba(255, 0, 0, 0.5);
+    font-size: 0.55rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-left: 5em;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+form button{
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    width: 250px;
+    height: 45px;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px hsla(223, 87%, 63%, 0.25);
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1.25px;
+    cursor: pointer;
+}
+
+form button:active{
+    opacity: 0.5;
+}
+
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image .pic{
+    width: 80%;
+}
+
+.socials{
+    display: flex;
+    margin-top: 15%;
+    justify-content: space-around;
+}
+
+.socials a{
+    margin:  0 5px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.8;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    width: 50px;
+    height: 50px;
+  }
+
+  .fa-instagram{
+    background: linear-gradient(purple, orange);
+    color: white;
+    width: 50px;
+    height: 50px;
+  }
+  .copyright{
+    margin-top: 2%;
+    color: hsl(0, 0%, 59%);
+  }
+
+
+
+
+@media (max-width:375px) {
+    main{
+        width: 75%;
+    }
+
+    main .logo{
+        margin: 25% auto 5% auto;
+        width: 25%;
+    }
+
+    main h1{
+        font-size: 1.5rem;
+        margin: 8% auto 2% auto;
+        font-weight: 300;
+        color: hsl(0, 0%, 59%);
+    }
+    
+    h1 span{
+        color: black;
+        text-shadow: 0 0 2px solid black;
+        font-weight: 700;
+    }
+
+    main h3{
+        font-size: 0.8rem;
+        margin: 5% auto 4% auto;
+    }
+
+    form input{
+        height: 40px;
+        width: 300px;
+        padding: 20px;
+        margin-right: 50px;
+        margin-bottom: 2.5%;
+    }
+
+    form{
+        margin-top: 7.5%;
+        margin-bottom: 15%;
+        flex-direction: column;  
+    }
+
+    form button{
+        background-color: hsl(223, 87%, 63%);
+        border: none;
+        width: 300px;
+        height: 45px;
+        margin-left: 25px;
+    }
+
+    .image .pic{
+        width: 115%;
+    }
+
+    .socials{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .fa {
+        padding: 5px;
+        font-size: 30px;
+        width: 25px;
+        height: 25px;
+      }
+
+      .copyright{
+        margin-top: 2%;
+        color: hsl(0, 0%, 59%);
+        font-size: 0.5rem;
+      }
+    
+    
+
+
+
+}
