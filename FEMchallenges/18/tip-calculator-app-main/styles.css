@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calc{
+    
+    background-color: white;
+    height: auto;
+    width: 45%;
+    margin: 3.5%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.25%;
+}
+
+
+.left{
+    grid-column: 1;
+    background-color: white;
+}
+
+.left h3{
+    font-size: 0.8em;
+    margin: 1% 0;
+    color: hsl(184, 14%, 56%);
+}
+
+
+
+.left .bill{
+    height: 3em;
+    width: 90%;
+    margin: 1% 0;
+    text-align: right;
+    border-radius: 5px;
+    background-color: hsl(180, 50%, 95%);
+    border: 1px solid hsla(180, 100%, 50%, 0.1);
+    font-weight: 700;
+    background: url('images/icon-dollar.svg') no-repeat;
+    background-position: 5% 50%;
+    background-size: 2.5%;
+    padding-right: 9%;
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 5%;
+    font-size: 1.1em;
+}
+
+.left input:focus{
+    outline: none !important;
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.right{
+    grid-column: 2;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    padding: 10%;
+    width: 100%;
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+}
+
+.options button{
+    background-color: hsl(183, 100%, 15%);
+    width: 100px;
+    height: 40px;
+    border: none;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+.options button:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+.options button:active{
+    background-color: hsl(172, 100%, 40%);
+}
+
+.left .custom{
+    text-align: center;
+    background-color: hsl(180, 50%, 95%);
+    border: 1px solid hsla(180, 100%, 50%, 0.1);
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 5%;
+    font-size: 1.2em;
+    width: 100px;
+    height: 40px;
+    margin: 2%;
+    border-radius: 5px;
+}
+
+.left .people{
+    height: 3em;
+    width: 90%;
+    margin: 1% 0;
+    padding: 1em;
+    text-align: right;
+    border-radius: 5px;
+    background-color: hsl(180, 50%, 95%);
+    border: 1px solid hsla(180, 100%, 50%, 0.1);
+    font-weight: 700;
+    background: url('images/icon-person.svg') no-repeat;
+    background-position: 5% 50%;
+    background-size: 2.5%;
+    padding-right: 9%;
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 5%; 
+    font-size: 1.1em;
+}
+
+.right .TipAmt, .right .Total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.right h3{
+    color: white;
+    font-size: 0.95em;
+}
+
+.right h3 span{
+    display: block;
+    color:  hsl(184, 14%, 56%);
+    font-size: 0.8em;
+}
+
+.right h1{
+    color: hsl(172, 67%, 45%);
+    font-size: 2.5em;
+}
+
+.reset{
+    position: relative;
+    width: 100%;
+    top: 25%;
+}
+
+.reset button{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+.reset button:active{
+    background-color: hsl(185, 100%, 85%);
+}
+
+.numppl{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.error{
+    color: rgba(255, 0, 0, 0.8);
+}
+
+.people{
+    border: 1px solid red;
+}
+
+@media (max-width:375px) {
+
+    
+
+    .calc{
+        width: 100%;
+        display: block;
+    }
+    
+
+    .left{
+        grid-row: 1;
+        padding: 6%;
+    }
+
+    .right{
+        grid-row: 2;
+        padding: 6%;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+
+    .right h1{
+        color: hsl(172, 67%, 45%);
+        font-size: 2em;
+    }
+
+    .left button{
+        width: 45%;
+        height: 45px;
+    }
+
+    .options{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        
+        margin: 200px;
+        margin-bottom: 5%;
+
+    }
+
+    .logopic{
+        width: 100px;
+        
+
+    }
+
+    .custom{
+        width: 144.78px;
+        height: 45px; 
+    }
+}
