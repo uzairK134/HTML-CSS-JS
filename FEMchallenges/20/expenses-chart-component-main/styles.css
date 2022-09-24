@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  hsl(27, 66%, 92%);
+}
+
+main{
+    margin:0 auto;
+    width: 25%;
+}
+
+.balance{
+    width: 100%;
+    height: 100px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    color: white;
+    letter-spacing: 1.25px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.mybalance h1{
+    font-size: 30px;
+}
+
+.logo{
+    display: flex;
+}
+
+.white{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 200px;
+    z-index: 1;
+}
+
+.brown{
+    height: 50px;
+    width: 50px;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 100px;
+    position: relative;
+    transform: translateX(-50%);
+    
+}
+
+.details{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px 30px 50px 30px;
+}
+
+.title{
+    color: hsl(25, 47%, 15%);
+    font-size: 14px;
+}
+
+.week{
+    height: 60%;
+    display: flex;
+}
+
+.day{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.day p{
+    align-self: center;
+}
+
+.bar{
+    height: 100%;
+    background-color:  hsl(10, 79%, 65%);
+    width: 75%;
+    border-radius: 5px;
+}
+
+.week p{
+    color: hsl(28, 10%, 53%);
+    font-size: 12px;
+}
+
+.amt{
+    width: 100%;
+    height: 18%;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 5px;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20%;
+
+    display: none;
+}
+
+.total{
+    margin-top: 5%;
+    height: 100px;
+    border-top: 1px solid hsla(28, 10%, 53%, 0.5);
+
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total p{
+    color: hsl(28, 10%, 53%);
+}
+
+.total h1, .total h5{
+    color: hsl(25, 47%, 15%);
+}
+
+
+.mon .bar{
+    height: 20%;
+}
+
+.teu .bar{
+    height: 40%;
+}
+
+.wed .bar{
+    height: 70%;
+    background-color: hsl(186, 34%, 60%);
+}
+
+.thu .bar{
+    height: 35%;
+}
+
+.fri .bar{
+    height: 25%;
+}
+
+.sat .bar{
+    height: 60%;
+}
+
+.sun .bar{
+    height: 50%;
+}
+
+.bar:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.day:hover > .amt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+@media (max-width:375px) {
+    main{
+        width: 90%;
+    }
+}
