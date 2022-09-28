@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik';
+    background-color: hsl(226, 43%, 10%);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person{
+    background-color: hsl(235, 46%, 20%);
+    margin: 2%;
+    height: 400px;
+    border-radius: 12px;
+    width: 220px;
+    
+}
+
+.person h4{
+    font-weight: 300;
+    color: hsl(235, 45%, 61%);
+    padding: 15px 0 0 20px;
+    font-size: 14px;
+}
+
+.person h4:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.pic{
+    width: 75px;
+    border: 4px solid white;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+
+.personfront{
+    background-color: hsl(246, 80%, 60%);
+    padding: 10%;
+    border-radius: 12px;
+    height: 70%;
+}
+
+.personfront p{
+    color: hsl(236, 100%, 87%);
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.personfront h1{
+    font-weight: 300;
+    color: white;
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+#weekly{
+    color: white;
+}
+
+.times{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 710px;
+}
+
+.times img{
+    width: 16px;
+}
+
+.boxback{
+    margin: 1%;
+    border-radius: 12px;
+    width: 220px;
+    height: 190px;
+    margin-bottom: 2%;
+}
+
+.work{
+    background: url('images/icon-work.svg') no-repeat;
+    background-position: top right;
+    background-color: hsl(15, 100%, 70%);
+}
+.play{
+    
+    background: url('images/icon-play.svg') no-repeat;
+    background-position: top right;
+    background-color: hsl(195, 74%, 62%);
+}
+.study{
+   
+    background: url('images/icon-study.svg') no-repeat;
+    background-position: top right;
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise{
+   
+    background: url('images/icon-exercise.svg') no-repeat;
+    background-position: top right;
+    background-color: hsl(145, 58%, 55%);
+}
+.social{
+   
+    background: url('images/icon-social.svg') no-repeat;
+    background-position: top right;
+    background-color: hsl(264, 64%, 52%);
+}
+.selfcare{
+    
+    background: url('images/icon-self-care.svg') no-repeat;
+    background-position: top right;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.box{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 12px;
+    height: 80%;
+    margin-top: 20%;
+    padding: 10%;
+}
+
+.tabtitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 12%;
+}
+
+.box h1{
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 4%;
+}
+
+.box p{
+    font-size: 10px;
+    color: hsl(236, 100%, 87%);
+}
+
+@media (max-width:375px) {
+    main{
+        flex-direction: column;
+    }
+
+    .person{
+        width: 85%;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .personfront{
+        height: 150px;
+        display: flex;
+        padding-right: 0;
+    }
+
+    .personfront .pic{
+        width: 80px;
+        height: 80px;
+    }
+
+    .name{
+        padding: 12px;
+        margin-left: 5px;
+    }
+
+    .personfront h1{
+        font-size: 22px;
+    }
+
+    .filter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter h4{
+        padding: 0;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 25px 15px 15px 15px;
+    }
+
+    .times{
+        width: 85%;
+    }
+
+    .boxback{
+       
+        width: 100%;
+        margin-bottom: 20px;
+        height: 150px;
+    }
+
+
+    .box{
+        margin-top: 35px;
+        padding: 25px;
+
+    }
+
+    .tabtitle{
+        margin-bottom: 10px;
+    }
+
+    .tabtitle h4{
+        font-size: 18px;
+    }
+
+    .box h1{
+        font-size: 32px;
+    }
+
+    .count{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .count p{
+        font-size: 14px;
+    }
+
+}
