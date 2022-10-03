@@ -1,0 +1,262 @@
+:root{
+  --notchPos: 0%;
+  --main-back: hsl(222, 26%, 31%);
+  --toggle-back: hsl(223, 31%, 20%);
+  --screen-back:  hsl(224, 36%, 15%);
+  --keypad-back: hsl(223, 31%, 20%);
+  --equals: hsl(6, 63%, 50%);
+  --equals-shadow: hsl(6, 70%, 34%);
+  --key-back: hsl(30, 25%, 89%);
+  --key-shadow: hsl(28, 16%, 65%);
+  --del-reset-key: hsl(225, 21%, 49%);
+  --del-reset-key-shadow: hsl(224, 28%, 35%);
+  --text: white;
+  --text-secondary: white;
+  --numkey-color: hsl(221, 14%, 31%);
+  --notch-color: hsl(6, 63%, 50%);
+
+}
+
+
+.theme1{
+  --notchPos: 0%;
+  --main-back: hsl(222, 26%, 31%);
+  --toggle-back: hsl(223, 31%, 20%);
+  --screen-back: hsl(224, 36%, 15%);
+  --keypad-back: hsl(223, 31%, 20%);
+  --equals: hsl(6, 63%, 50%);
+  --equals-shadow: hsl(6, 70%, 34%);
+  --key-back: hsl(30, 25%, 89%);
+  --key-shadow: hsl(28, 16%, 65%);
+  --del-reset-key: hsl(225, 21%, 49%);
+  --del-reset-key-shadow: hsl(224, 28%, 35%);
+  --text: white;
+  --text-secondary: white; 
+  --numkey-color: hsl(221, 14%, 31%);
+  --notch-color: hsl(6, 63%, 50%);
+}
+
+.theme2{
+  --notchPos: 33%;
+  --main-back: hsl(0, 0%, 90%);
+  --toggle-back: hsl(0, 5%, 81%);
+  --screen-back: hsl(0, 0%, 93%);
+  --keypad-back: hsl(0, 5%, 81%);
+  --equals: hsl(25, 98%, 40%);
+  --equals-shadow: hsl(6, 70%, 34%);
+  --key-back: hsl(45, 7%, 89%);
+  --key-shadow: hsl(35, 11%, 61%);
+  --del-reset-key: hsl(185, 42%, 37%);
+  --del-reset-key-shadow: hsl(185, 58%, 25%);
+  --text: hsl(60, 10%, 19%);
+  --numkey-color: hsl(60, 10%, 19%);
+  --text-secondary: hsl(60, 10%, 19%);
+  --notch-color: hsl(6, 63%, 50%);
+}
+
+
+.theme3{
+ --notchPos: 66%;
+  --main-back: hsl(268, 75%, 9%);
+  --toggle-back: hsl(268, 71%, 12%);
+  --screen-back: hsl(268, 71%, 12%);
+  --keypad-back: hsl(268, 71%, 12%);
+  --equals: hsl(176, 100%, 44%);
+  --equals-shadow: hsl(177, 92%, 70%);
+  --key-back: hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
+  --del-reset-key: hsl(281, 89%, 26%);
+  --del-reset-key-shadow: hsl(285, 91%, 52%);
+  --text: hsl(52, 100%, 62%);
+  --text-secondary: hsl(52, 100%, 62%);
+  --numkey-color: hsl(52, 100%, 62%);
+  --notch-color: hsl(176, 100%, 44%);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;900&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'League Spartan';
+}
+
+body{
+  background-color: var(--main-back);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  
+}
+
+.container{
+  width: 650px;
+  margin: 0 auto;
+  height: 750px;
+}
+
+.themediv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.themediv h2{
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-size: 32px;
+}
+
+.selectordiv{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.selector{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.themeNo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  color: var(--text);
+  font-size: 22px;
+}
+
+.themeNo h5:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.themelabel{
+  color: var(--text);
+  letter-spacing: 1.25px;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.slider{
+  width: 80px;
+  background-color: var(--toggle-back);
+  height: 30px;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.notch{
+  height: 100%;
+  background-color: var(--notch-color);
+  width: 28%;
+  border-radius: 40px;
+  position: relative;
+  /* left: 0%; */
+  left: var(--notchPos);
+}
+
+.display{
+  margin-top: 3%;
+  width: 100%;
+  height: 150px;
+  background-color: var(--screen-back);
+  border-radius: 10px;
+  align-items: center;
+  padding: 4%;
+  font-weight: 700;
+  font-size: 76px;
+  color: var(--text);
+  text-align: right;
+  text-transform: uppercase;
+  padding-top: 5%;
+}
+
+.numpad{
+  margin-top: 3%;
+  width: 100%;
+  height: 500px;
+  background-color: var(--keypad-back);
+  border-radius: 10px;
+}
+
+.numkeys{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+  padding: 4%;
+}
+
+.reset, .equals{
+  margin: 3%;
+}
+
+.reset{
+  grid-column: span 2;
+}
+
+.equals{
+  grid-column: span 2;
+  background-color: var(--equals);
+  box-shadow: 0 0 0 1px var(--equals-shadow) inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      var(--equals-shadow),0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.numkeys button{
+  border-radius: 10px;
+  font-size: 34px;
+  font-weight: 700;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  /* box-shadow: 0 0 0 1px #163772 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      #333797,0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5); */
+}
+
+button:active{
+  opacity: 0.75;
+}
+
+.reset:active, .equals:active{
+  opacity: 0.75;
+}
+
+.numkey, .op, .del{
+  margin: 7%;
+}
+
+
+.del, .reset{
+  background-color: var(--del-reset-key);
+  box-shadow: 0 0 0 1px var(--del-reset-key-shadow) inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      var(--del-reset-key-shadow),0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.numkey, .op{
+  color: var(--numkey-color);
+  background-color: var(--key-back);
+  box-shadow: 0 0 0 1px var(--key-shadow) inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 4px 0 0      var(--key-shadow),0 4px 0 1px rgba(0, 0, 0, 0.4),0 4px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.del, .reset, .equals{
+  color: white;
+}
+
+@media (max-width:375px) {
+  .container{
+    width: 320px;
+  }
+}
+
+
+
